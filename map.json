@@ -1,0 +1,148 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1a1205ad03e-layer-2",
+      "title": "LakeDistrictFells",
+      "url": "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/LakeDistrictFells_CF/FeatureServer/0",
+      "itemId": "fd663bb44f45452ba895cd5cc107cdd2",
+      "layerType": "ArcGISFeatureLayer",
+      "blendMode": "normal",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "field": "Metres",
+                "legendOptions": {
+                  "title": "Height (m)"
+                },
+                "stops": [
+                  {
+                    "label": "37 m",
+                    "size": 6,
+                    "value": 37
+                  },
+                  {
+                    "label": "978 m",
+                    "size": 28,
+                    "value": 978.07
+                  }
+                ]
+              },
+              {
+                "type": "colorInfo",
+                "field": "Drop_",
+                "legendOptions": {
+                  "title": "Prominence (m)"
+                },
+                "stops": [
+                  {
+                    "color": [
+                      33,
+                      102,
+                      172,
+                      255
+                    ],
+                    "label": "0 m",
+                    "value": 0
+                  },
+                  {
+                    "color": [
+                      247,
+                      247,
+                      247,
+                      255
+                    ],
+                    "label": "456 m",
+                    "value": 456.1
+                  },
+                  {
+                    "color": [
+                      178,
+                      24,
+                      43,
+                      255
+                    ],
+                    "label": "912 m",
+                    "value": 912.2
+                  }
+                ]
+              }
+            ],
+            "symbol": {
+              "type": "esriSMS",
+              "color": [
+                247,
+                247,
+                247,
+                255
+              ],
+              "angle": 0,
+              "xoffset": 0,
+              "yoffset": 0,
+              "size": 10,
+              "style": "esriSMSTriangle",
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                "width": 0.5,
+                "style": "esriSLSSolid"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "world-hillshade-layer",
+        "showLegend": false,
+        "opacity": 1,
+        "title": "World Hillshade",
+        "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "visibility": true,
+        "layerType": "ArcGISTiledMapServiceLayer"
+      },
+      {
+        "id": "topo-vector-base-layer",
+        "opacity": 1,
+        "title": "World Topo",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
+      }
+    ],
+    "title": "Topographic"
+  },
+  "authoringApp": "ArcGIS API for JavaScript",
+  "authoringAppVersion": "5.1",
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -394918.89410254476,
+        "ymin": 7228902.049472509,
+        "xmax": -288977.17289924994,
+        "ymax": 7288981.553704681
+      }
+    }
+  },
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "timeZone": "system",
+  "version": "2.37"
+}

@@ -1,0 +1,99 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-09T11:09:09.800Z",
+  "item": {
+    "title": "Lake District Fells",
+    "subtitle": "Height and prominence explorer"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "analysis",
+    "showHeader": true,
+    "theme": {
+      "mode": "light",
+      "accent": "default"
+    },
+    "layout": {
+      "right": {
+        "hidden": false,
+        "width": "340px",
+        "title": "Symbol styling",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "fell-color-ramp",
+            "title": "Prominence color ramp",
+            "icon": "measure"
+          }
+        ]
+      }
+    },
+    "widgets": [
+      {
+        "id": "legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "title": "Legend",
+        "config": {}
+      },
+      {
+        "id": "default-layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "fell-color-ramp-control",
+        "label": "Fell prominence color ramp control",
+        "bundlePath": "./runtime/behaviors/fell-color-ramp-control-44c73c241e3d84ef.js",
+        "sourceSha256": "44c73c241e3d84ef6a2612897c82c4477e87086492d2574e02f4e7b8734f5ac7",
+        "modulePaths": [],
+        "config": {
+          "layerId": "1a1205ad03e-layer-2",
+          "prominenceField": "Drop_",
+          "min": 0,
+          "mid": 456.1,
+          "max": 912.2
+        },
+        "mounts": [
+          "fell-color-ramp"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-10-09T11:31:23.768Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "490df050-f90b-43e9-bbb9-92d8aae3a97e",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-f50691c9-22b6-46e3-8686-bed3e57bc41e",
+      "mapName": "New Conversation",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-09T11:09:09.794Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}
